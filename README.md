@@ -22,5 +22,5 @@ Antes de ejecutar los proyectos, asegúrate de tener instalados los siguientes r
 1. **Clonar el Repositorio**
 
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd <NOMBRE_DEL_REPOSITORIO>
+   git clone https://github.com/liodansdiaz/prueba-tecnica-net8.git
+   cd prueba-tecnica-net8
