@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ApiConsumer": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
