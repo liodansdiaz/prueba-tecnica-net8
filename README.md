@@ -22,9 +22,10 @@ Antes de ejecutar los proyectos, asegúrate de tener instalados los siguientes r
 1. **Clonar el Repositorio**
 
    git clone https://github.com/liodansdiaz/prueba-tecnica-net8.git
+   
    cd prueba-tecnica-net8
    
-2. Configurar Docker
+3. Configurar Docker
 
    Asegúrate de que Docker esté en funcionamiento y puedes comprobarlo ejecutando:
 
@@ -32,7 +33,7 @@ Antes de ejecutar los proyectos, asegúrate de tener instalados los siguientes r
    docker-compose --version
    
 
-3. Configuración de Docker Compose
+4. Configuración de Docker Compose
     Ejecuta los siguientes comandos para construir y levantar los servicios definidos en docker-compose.yml:
 
    docker-compose up --build
