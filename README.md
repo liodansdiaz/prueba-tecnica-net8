@@ -21,6 +21,41 @@ Antes de ejecutar los proyectos, asegúrate de tener instalados los siguientes r
 
 1. **Clonar el Repositorio**
 
-   ```bash
    git clone https://github.com/liodansdiaz/prueba-tecnica-net8.git
    cd prueba-tecnica-net8
+   
+2. Configurar Docker
+
+   Asegúrate de que Docker esté en funcionamiento y puedes comprobarlo ejecutando:
+
+   docker --version
+   docker-compose --version
+   
+
+3. Configuración de Docker Compose
+    Ejecuta los siguientes comandos para construir y levantar los servicios definidos en docker-compose.yml:
+
+   docker-compose up --build
+
+  Esto levantará los contenedores para Kafka, Zookeeper y las aplicaciones de productor y consumidor.
+
+ Ejecución de Aplicaciones
+   
+   1. Productor de Kafka   
+      La aplicación de productor se ejecuta dentro de un contenedor Docker. Una vez que el contenedor esté en funcionamiento, empezará a producir mensajes al tópico de Kafka configurado.
+   
+   2. Consumidor de Kafka   
+      Similar al productor, el consumidor también se ejecuta en un contenedor Docker y consumirá mensajes del tópico de Kafka.
+   
+   3. Consumidor de API   
+      Puedes ejecutar esta aplicación de consola directamente desde la línea de comandos:
+      
+        dotnet KafkaConsumer.dll
+      
+      Asegúrate de que el archivo appsettings.json esté configurado correctamente con la URL de la API y los parámetros necesarios.
+   
+   5. Pruebas Unitarias   
+       Las pruebas unitarias para la aplicación de consumo de API se encuentran en el proyecto KafkaConsumerTests. Puedes ejecutarlas con el siguiente comando:
+      
+        dotnet test
+      
